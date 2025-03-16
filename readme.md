@@ -4,27 +4,27 @@
 
 ​		本课题采用Lidar传感器，基于测距、三维建模课题展开研究，设计了一整套室内三维数据采集及上位机显示方案。其中包括：设计研究了多种机械云台扫描方案、点云数据处理方案和三维实时显示方案，并详细对比讨论了各个方案的实施效果和优缺点。本课题重点针对Lidar传感器自身的采集缺陷问题展开深入探讨， 提出了多种解决方案，并测试了实现效果。最终对比各方案的适用条件及特点，经过综合调试和运行，得出了有较高可靠性、较好稳定性的三维扫描建模解决方案，实现 了对室内环境较高精度的三维图像数字重建。 
 
-![IMG_20230601_145654-01](readme.assets/IMG_20230601_145654-01.jpeg)
+![IMG_20230601_145654-01](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/1d0d42c7706f8927510bf580b446569e7fa0af27/readme.assets/IMG_20230601_145654-01.jpeg)
 
 ## 系统精度测试
 
-![IMG_20230601_145941-01](readme.assets/IMG_20230601_145941-01.jpeg)
+![IMG_20230601_145941-01](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/1d0d42c7706f8927510bf580b446569e7fa0af27/readme.assets/IMG_20230601_145941-01.jpeg)
 
-![1](readme.assets/1.jpg)
+![1](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/1.jpg)
 
-![4](readme.assets/4.jpg)
+![4](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/4.jpg)
 
 ## 早期版本
 
-![桌子竖起来](readme.assets/桌子竖起来.jpeg)
+![桌子竖起来](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/%E6%A1%8C%E5%AD%90%E7%AB%96%E8%B5%B7%E6%9D%A5.jpeg)
 
-![image16](readme.assets/image16.png)
+![image16](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/image16.png)
 
 ## 拓展测试：环绕扫描合成
 
-<img src="readme.assets/IMG_20230611_211254.jpg" alt="IMG_20230611_211254" style="zoom:10%;" />
+<img src="https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/IMG_20230611_211254.jpg" alt="IMG_20230611_211254" style="zoom:10%;" />
 
-![mmexport1686489638593](readme.assets/mmexport1686489638593.png)
+![mmexport1686489638593](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/mmexport1686489638593.png)
 
 
 
@@ -32,9 +32,9 @@
 
 # 方案Ⅰ 双舵机
 
-![QQ图片20220529181839](readme.assets/QQ图片20220529181839.jpg)
+![QQ图片20220529181839](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/QQ%E5%9B%BE%E7%89%8720220529181839.jpg)
 
-![IMG_20220420_201532-01](readme.assets/IMG_20220420_201532-01.jpeg)
+![IMG_20220420_201532-01](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/IMG_20220420_201532-01.jpeg)
 
 **主控：STM32F103ZET6**
 
@@ -73,7 +73,7 @@ JY901S和LIDAR由单片机供电
 
 # 方案Ⅱ-2：丝杠+单线雷达
 
-![image-20250316125317732](readme.assets/image-20250316125317732.png)
+![image-20250316125317732](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/image-20250316125317732.png)
 
 **主控：stm32f103rct6**
 
@@ -134,15 +134,15 @@ round125 = 10mm
 
 ## JY901S上位机及接线
 
-![image-20230511170115381](readme.assets/image-20230511170115381.png)
+![image-20230511170115381](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/image-20230511170115381.png)
 
-![image-20230508171606614](readme.assets/image-20230508171606614.png)
+![image-20230508171606614](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/image-20230508171606614.png)
 
 
 
 # 方案Ⅲ-XY双滑台
 
-![image-20250316125327268](readme.assets/image-20250316125327268.png)
+![image-20250316125327268](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/main/readme.assets/image-20250316125327268.png)
 
 **PC2 PC3 PC4 PC5**
 **01  03  02  04**
