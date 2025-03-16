@@ -1,0 +1,9 @@
+..\obj\nlink_utils.o: ..\HARDWARE\NLINK\nlink_utils.c
+..\obj\nlink_utils.o: ..\HARDWARE\NLINK\nlink_utils.h
+..\obj\nlink_utils.o: ..\HARDWARE\NLINK\nlink_typedef.h
+..\obj\nlink_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\nlink_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\nlink_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\nlink_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\nlink_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\nlink_utils.o: ..\HARDWARE\NLINK\nlink_tofsensem_frame0.h
