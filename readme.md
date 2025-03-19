@@ -112,6 +112,8 @@ JY901S和LIDAR由单片机供电
 
 （电机雷达）（电机复位/不复位直接读取）（舵机复位）→JY901S→舵机雷达→电机雷达→电机→舵机 →JY901S→舵机雷达→电机雷达→电机→舵机
 
+![](https://github.com/shanshili/LiDAR-3D-Reconstructor/blob/eb7b5adbe95e0c230e48f66a3444d735cb098307/readme.assets/graphviz.svg)
+
 
 ```Mermaid
 graph TD
