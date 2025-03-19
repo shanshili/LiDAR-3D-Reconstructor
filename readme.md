@@ -57,18 +57,21 @@
 
 **主控：STM32F103ZET6**
 
-**OC2  PB5 **
+**OC2  PB5**
 
 **OC3  PB0**
 
 **JY901S(USART3):**
-	**USB-TTL                   STM32Core              		JY901s 仅接收角度 俯仰x 横滚y 航向z**
-	**VCC          -----           VCC                ----        	 VCC**
-	**TX             -----           RX1  (PA10)   
-	RX             -----           TX1  (PA9)**
-	**GND          -----           GND               ----       	GND**
-									   **RX2  (PB11)    ----             TX**
-										**TX2  (PB10)    ----             RX**
+
+| USB-TTL |      | STM32Core   |      | JY901s 仅接收角度 俯仰x 横滚y 航向z |
+| ------- | ---- | ----------- | ---- | ----------------------------------- |
+| VCC     | ---- | VCC         | ---- | VCC                                 |
+| TX      | ---- | RX1  (PA10) |      |                                     |
+| RX      | ---- | TX1  (PA9)  |      |                                     |
+| GND     | ---- | GND         | ---- | GND                                 |
+|         |      | RX2  (PB11) | ---- | TX                                  |
+|         |      | TX2  (PB10) | ---- | RX                                  |
+
 **LIDAR(USART2):**
 	**TX PA2** 
 	**RX PA3** 
@@ -96,19 +99,19 @@ JY901S和LIDAR由单片机供电
 
 **主控：stm32f103rct6**
 
-**PC2 PC3 PC4 PC5 ** **01  03  02  04**电机控制：GPIO
+**PC2 PC3 PC4 PC5   01  03  02  04**电机控制：GPIO
 
-**TX PC10  ** **RX PC11**  **VCC GND**电机雷达：UART4、中断
+**TX PC10   RX PC11  VCC GND**电机雷达：UART4、中断
 
-**SCLK b8**  **SDIN b9** **VCC GND**OLED:电机距离实时显示
+**SCLK b8  SDIN b9  VCC GND**OLED:电机距离实时显示
 
-**RX1  PA10**   **TX1  PA9 ** **VCC GND**串口打印：USART1 
+**RX1  PA10  TX1  PA9  VCC GND**串口打印：USART1 
 
 **OC2  PB5** 舵机：PWM              
 
-**RX2  PB11**   **TX2  PB10**  **VCC GND**jy901s:  USART3、中断                                                                                                                                                                                                    
+**RX2  PB11  TX2  PB10  VCC GND**jy901s:  USART3、中断                                                                                                                                                                                                    
 
-**TX PA2**  **RX PA3** **VCC GND**舵机雷达：USART2、中断
+**TX PA2  RX PA3  VCC GND**舵机雷达：USART2、中断
 
 （电机雷达）（电机复位/不复位直接读取）（舵机复位）→JY901S→舵机雷达→电机雷达→电机→舵机
 
