@@ -101,23 +101,33 @@ JY901S和LIDAR由单片机供电
 
 **主控：stm32f103rct6**
 
-**PC2 PC3 PC4 PC5   01  03  02  04**电机控制：GPIO
+| PC2 PC3 PC4 PC5   01  03  02  04 | 电机控制：GPIO         |
+| -------------------------------- | ---------------------- |
+| TX PC10   RX PC11  VCC GND       | 电机雷达：UART4、中断  |
+| SCLK b8  SDIN b9  VCC GND        | OLED:电机距离实时显示  |
+| RX1  PA10  TX1  PA9  VCC GND     | 串口打印：USART1       |
+| OC2  PB5                         | 舵机：PWM              |
+| RX2  PB11  TX2  PB10  VCC GND    | jy901s:  USART3、中断  |
+| TX PA2  RX PA3  VCC GND          | 舵机雷达：USART2、中断 |
 
-**TX PC10   RX PC11  VCC GND**电机雷达：UART4、中断
+（电机雷达）（电机复位/不复位直接读取）（舵机复位）→JY901S→舵机雷达→电机雷达→电机→舵机 →JY901S→舵机雷达→电机雷达→电机→舵机
 
-**SCLK b8  SDIN b9  VCC GND**OLED:电机距离实时显示
 
-**RX1  PA10  TX1  PA9  VCC GND**串口打印：USART1 
+```Mermaid
+graph TD
+    A[电机雷达] --> B{电机已复位?}
+    B -->|未复位| C[执行电机复位]
+    B -->|已复位| D[直接读取状态]
+    D --> F
+    C --> F[JY901S传感器]
+    F --> G[舵机雷达扫描]
+    G --> H[电机雷达扫描]
+    H --> I[电机动作]
+    I --> J[舵机动作]
+    J --> F
+```
 
-**OC2  PB5** 舵机：PWM              
 
-**RX2  PB11  TX2  PB10  VCC GND**jy901s:  USART3、中断                                                                                                                                                                                                    
-
-**TX PA2  RX PA3  VCC GND**舵机雷达：USART2、中断
-
-（电机雷达）（电机复位/不复位直接读取）（舵机复位）→JY901S→舵机雷达→电机雷达→电机→舵机
-
-→JY901S→舵机雷达→电机雷达→电机→舵机
 
 ##  供电
 
